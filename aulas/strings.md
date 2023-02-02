@@ -115,3 +115,78 @@ string.replace(valor_antigo, novo_valor, conta)
 
 In 2021, the best definition of “character” we have is a Unicode character. Accordingly, the items we get out of a Python 3 str are Unicode characters, just like the items of a unicode object in Python 2—and not the raw bytes we got from a Python 2 str.
 
+.zfill() 
+print("""a funçao .zfill() vai adicionar a quantidade de 0 para concluir um numero de casas o mesmo funciona com palavras""")
+numero = "30"
+print(numero.zfill(3))
+texto = "texto"
+print(texto.zfill(9))
+
+.upper()
+print("""a funçao upper vai deixar a frase em Caps Lock ou seja:""")
+texto = "arroz é bom"
+print(texto.upper())
+texto = "isto nao se  faz 02"
+print(texto.upper())
+texto = "Sim eu nao sei"
+print(texto.upper())
+
+.translate()
+print("""basicamnte o translate vai retornar uma especie de traduçao""")
+a= {9: 2}
+texto = "caneta azul, azul caneta"
+print(texto.translate(a))
+b= {3: 6}
+texto = "isto es em altas"
+print(texto.translate(b))
+c= {29: 9}
+texto = "vamos passear "
+print(texto.translate(c))
+
+.title()
+print("""basicamento o title() vai tranformar todas a primeira letra de cada palavra em upper case ou seja:""")
+texto = "eu nao sei ler"
+print(texto.title())
+texto = "vamos brincar"
+print(texto.title())
+texto = "eu gosto de jogar"
+print(texto.title())
+
+.swapcase()
+print("""basicamnete o swapcase() faz com que as letras maiusculas se tornem minusculas e virce versa""")
+texto = "EEEEE NNNN uus sss"
+print(texto.swapcase())
+texto = "Milimetro é diferente"
+print(texto.swapcase())
+texto = "Eu Nao Sei"
+print(texto.swapcase())
+
+.strip
+print("""basicamente o strip() vai fazer com que a frase naoo contem o numero de espeços desnecessarios
+ou seja:""")
+texto = "banana"
+print("minha fruta favorita é",texto.strip())
+texto = "verde"
+print("minha cor favorita é",texto.strip())
+texto = "maça"
+print("minha fruta favorita é",texto.strip())
+
+
+.startswith
+print("""basicamente o startswith vai retornar se é True or False caso a palavra inserida esta no inicio da frase
+ou seja:""")
+
+txt = "eu gosto do verao"
+print(txt.startswith('eu'))
+print(txt.startswith('verao'))
+
+.sliplines
+print("""basicamente a funçao "splitlines" vai receber uma string e tranformando em lista
+ou seja:""")
+
+txt = "eu nao sei"
+print(txt.splitlines())
+txt = "eu nao s3i \n a"
+print(txt.splitlines())
+txt = "aA \n nnnnnn \n ddddd "
+print(txt.splitlines())
